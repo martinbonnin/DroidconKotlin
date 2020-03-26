@@ -148,3 +148,6 @@ xcode {
     target = "iosApp"
 }
 
+apollo {
+    generateKotlinModels.set(true)
+}
