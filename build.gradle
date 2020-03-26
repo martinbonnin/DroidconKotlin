@@ -104,6 +104,7 @@ buildscript {
         gradlePluginPortal()
         maven { url "https://kotlin.bintray.com/kotlinx" }
         maven { url 'https://maven.fabric.io/public' }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
     }
 
     dependencies {
@@ -115,6 +116,7 @@ buildscript {
         classpath "co.touchlab:kotlinxcodesync:${versions.xcode}"
         classpath "io.fabric.tools:gradle:${versions.fabric}"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:2.1.0-alpha06"
+        classpath "com.apollographql.apollo:apollo-gradle-plugin:2.0.0-SNAPSHOT"
 
     }
 }
@@ -126,5 +128,6 @@ allprojects {
         mavenCentral()
         maven { url "https://kotlin.bintray.com/kotlinx" }
         maven { url "https://dl.bintray.com/russhwolf/multiplatform-settings" }
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
     }
 }
