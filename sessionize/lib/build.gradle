@@ -149,5 +149,5 @@ xcode {
 }
 
 apollo {
-    generateKotlinModels.set(true)
+    //generateKotlinModels.set(true)
 }
